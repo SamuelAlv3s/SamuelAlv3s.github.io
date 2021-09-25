@@ -10,7 +10,8 @@
 /* Variables */
 
 :root {
-  --main-color: #54b689;
+  --main-color: #5945a3;
+  --highlight: #8471c9;
   --main-text-color: #fff;
   --border-color: #999;
   --bio-bg-color: #1e2a3a;
@@ -21,7 +22,7 @@
 /* General */
 
 .highlight {
-  color: var(--main-color);
+  color: var(--highlight);
 }
 
 /* Containers */
@@ -189,7 +190,15 @@
   margin-right: 10px;
 }
 
-/* Mobile */
+/* Lottie container */
+
+#lottie-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Breakpoints */
 
 @media (max-width: 450px) {
   #container {
@@ -235,5 +244,11 @@
 
   .skills-box i {
     font-size: 60px;
+  }
+}
+
+@media (max-width: 1050px) {
+  #lottie-container {
+    display: none;
   }
 }
